@@ -2,23 +2,14 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# ----------------------------
-# Page Configuration
-# ----------------------------
 st.set_page_config(
     page_title="Heart Disease Prediction",
     page_icon="❤️",
     layout="wide"
 )
 
-# ----------------------------
-# Load Trained Pipeline
-# ----------------------------
 pipeline = joblib.load("models/heart_disease_pipeline.pkl")
 
-# ----------------------------
-# Title
-# ----------------------------
 st.title("❤️ Heart Disease Prediction System")
 
 st.write("""
@@ -26,9 +17,6 @@ This application predicts whether a patient is likely to have heart disease
 using a Machine Learning model trained on clinical data.
 """)
 
-# ----------------------------
-# Patient Input
-# ----------------------------
 st.header("🩺 Patient Information")
 
 col1, col2 = st.columns(2)
@@ -98,9 +86,7 @@ with col2:
         ["Up", "Flat", "Down"]
     )
 
-# ----------------------------
-# Prediction
-# ----------------------------
+
 if st.button("🔍 Predict"):
 
     patient = pd.DataFrame({
