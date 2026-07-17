@@ -195,5 +195,4 @@ streamlit run app/app.py
 
 **HOZIFA MOHAMED**
 
-- GitHub: https://github.com/YOUR_USERNAME
-- LinkedIn: https://www.linkedin.com/in/YOUR_LINKEDIN
+- GitHub: https://github.com/Hoziva
